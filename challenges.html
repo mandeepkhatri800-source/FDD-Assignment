@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenges | LBEF/APU Hackathon 2026</title>
+    <meta name="description" content="Browse challenge categories and filter through specific tracks for the LBEF/APU Hackathon 2026.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="branding" id="brandingLogo">
+                <img src="images/logo/lbef_logo.webp" alt="LBEF Logo" class="logo-img">
+                <span class="logo-divider">×</span>
+                <img src="images/logo/apu_logo.webp" alt="APU Logo" class="logo-img">
+                <div class="branding-text">
+                    <span class="branding-title">LBEF/APU</span>
+                    <span class="branding-subtitle">Hackathon 2026</span>
+                </div>
+            </a>
+            <button class="hamburger" id="hamburgerToggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link" id="nav-home">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link" id="nav-about">About</a></li>
+                <li class="nav-item"><a href="schedule.html" class="nav-link" id="nav-schedule">Schedule</a></li>
+                <li class="nav-item"><a href="challenges.html" class="nav-link active" id="nav-challenges">Challenges</a></li>
+                <li class="nav-item"><a href="workshops.html" class="nav-link" id="nav-workshops">Workshops</a></li>
+                <li class="nav-item"><a href="register.html" class="nav-link" id="nav-register">Register</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">More</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="rules.html" class="nav-link" id="nav-rules">Rules</a></li>
+                        <li><a href="resources.html" class="nav-link" id="nav-resources">Resources</a></li>
+                        <li><a href="gallery.html" class="nav-link" id="nav-gallery">Gallery</a></li>
+                        <li><a href="news.html" class="nav-link" id="nav-news">News</a></li>
+                        <li><a href="faq.html" class="nav-link" id="nav-faq">FAQ</a></li>
+                        <li><a href="contact.html" class="nav-link" id="nav-contact">Contact</a></li>
+                        <li><a href="sponsors.html" class="nav-link" id="nav-sponsors">Sponsors</a></li>
+                        <li><a href="feedback.html" class="nav-link" id="nav-feedback">Feedback</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Page Hero Banner -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Challenge Tracks</h1>
+            <p>Select your track and explore design requirements for your prototype.</p>
+        </div>
+    </section>
+
+    <!-- Challenges Grid Section -->
+    <section class="section">
+        <div class="container">
+            
+            <!-- Category Filter Buttons -->
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">All Challenges</button>
+                <button class="filter-btn" data-filter="web">Web Dev</button>
+                <button class="filter-btn" data-filter="ai">Artificial Intelligence</button>
+                <button class="filter-btn" data-filter="cyber">Cybersecurity</button>
+                <button class="filter-btn" data-filter="cloud">Cloud Computing</button>
+                <button class="filter-btn" data-filter="digital">Digital Innovation</button>
+            </div>
+
+            <!-- Challenges Cards Grid -->
+            <div class="grid-3" id="challengesGrid">
+                
+                <!-- Web Challenge 1 -->
+                <div class="card challenge-card" data-category="web">
+                    <div class="card-body">
+                        <span class="card-tag tag-web">Web Dev</span>
+                        <span class="difficulty-tag difficulty-easy">Easy</span>
+                        <h3>Community Portal</h3>
+                        <p>Create a highly responsive community support system portal promoting volunteer connection and event organization within local Nepalese municipalities.</p>
+                        <a href="register.html" class="btn btn-outline" style="width: 100%;">Select Track</a>
+                    </div>
+                </div>
+
+                <!-- Web Challenge 2 -->
+                <div class="card challenge-card" data-category="web">
+                    <div class="card-body">
+                        <span class="card-tag tag-web">Web Dev</span>
+                        <span class="difficulty-tag difficulty-medium">Medium</span>
+                        <h3>E-Commerce Dashboard</h3>
+                        <p>Develop a structured merchant dashboard layout illustrating live sales, inventory trackers, and responsive data visualizers using vanilla CSS grids.</p>
+                        <a href="register.html" class="btn btn-outline" style="width: 100%;">Select Track</a>
+                    </div>
+                </div>
+
+                <!-- AI Challenge 1 -->
+                <div class="card challenge-card" data-category="ai">
+                    <div class="card-body">
+                        <span class="card-tag tag-ai">AI</span>
+                        <span class="difficulty-tag difficulty-hard">Hard</span>
+                        <h3>Smart Crop Assistant</h3>
+                        <p>Prototype an agricultural prediction interface utilizing mock neural networks to recommend optimal crop rotation and water usage levels.</p>
+                        <a href="register.html" class="btn btn-outline" style="width: 100%;">Select Track</a>
+                    </div>
+                </div>
+
+                <!-- AI Challenge 2 -->
+                <div class="card challenge-card" data-category="ai">
+                    <div class="card-body">
+                        <span class="card-tag tag-ai">AI</span>
+                        <span class="difficulty-tag difficulty-medium">Medium</span>
+                        <h3>Educational Bot UI</h3>
+                        <p>Create an interactive, client-side conversation interface acting as an automated tutor for programming modules, emphasizing accessibility.</p>
+                        <a href="register.html" class="btn btn-outline" style="width: 100%;">Select Track</a>
+                    </div>
+                </div>
+
+                <!-- Cybersecurity Challenge 1 -->
+                <div class="card challenge-card" data-category="cyber">
+                    <div class="card-body">
+                        <span class="card-tag tag-cyber">Cyber</span>
+                        <span class="difficulty-tag difficulty-hard">Hard</span>
+                        <h3>Phishing Analyzer</h3>
+                        <p>Build a secure mockup analysis platform designed to inspect email link structures, headers, and flag common phishing parameters client-side.</p>
+                        <a href="register.html" class="btn btn-outline" style="width: 100%;">Select Track</a>
+                    </div>
+                </div>
+
+                <!-- Cloud Challenge 1 -->
+                <div class="card challenge-card" data-category="cloud">
+                    <div class="card-body">
+                        <span class="card-tag tag-cloud">Cloud</span>
+                        <span class="difficulty-tag difficulty-medium">Medium</span>
+                        <h3>Server Status monitor</h3>
+                        <p>Design a visually stunning live server cluster dashboard rendering CPU loads, storage limits, and regional node availability status indicators.</p>
+                        <a href="register.html" class="btn btn-outline" style="width: 100%;">Select Track</a>
+                    </div>
+                </div>
+
+                <!-- Digital Innovation Challenge 1 -->
+                <div class="card challenge-card" data-category="digital">
+                    <div class="card-body">
+                        <span class="card-tag tag-digital">Innovation</span>
+                        <span class="difficulty-tag difficulty-easy">Easy</span>
+                        <h3>Smart Campus App</h3>
+                        <p>Design a prototype interface facilitating room booking, club event registrations, and schedule maps specifically for LBEF and APU students.</p>
+                        <a href="register.html" class="btn btn-outline" style="width: 100%;">Select Track</a>
+                    </div>
+                </div>
+
+            </div>
+            
+            <p class="demo-note">Note: Click the filters to sort challenges in real time using vanilla JavaScript.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col footer-about">
+                <h3>LBEF/APU Hackathon 2026</h3>
+                <p>An academic technology event co-hosted by Lord Buddha Education Foundation (Nepal) and Asia Pacific University of Technology & Innovation (Malaysia).</p>
+                <p>Designed as an introductory Web Design & Development (FDD) module project.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="challenges.html">Challenges</a></li>
+                    <li><a href="workshops.html">Workshops</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </div>
+            <div class="footer-col footer-contact">
+                <h3>Contact Info</h3>
+                <p>📍 Kathmandu, Nepal</p>
+                <p>📧 info@lbef.edu.np</p>
+                <p>📞 +977-1-4444337</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-icon">Fb</a>
+                    <a href="#" class="social-icon">Tw</a>
+                    <a href="#" class="social-icon">Ld</a>
+                    <a href="#" class="social-icon">Yt</a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 LBEF/APU Hackathon. Academic Project. Fictional / Sample Information.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

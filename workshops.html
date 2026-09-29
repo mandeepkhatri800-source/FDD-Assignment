@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshops | LBEF/APU Hackathon 2026</title>
+    <meta name="description" content="Explore expert-led technology workshops and seminars hosted during the hackathon.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="branding" id="brandingLogo">
+                <img src="images/logo/lbef_logo.webp" alt="LBEF Logo" class="logo-img">
+                <span class="logo-divider">×</span>
+                <img src="images/logo/apu_logo.webp" alt="APU Logo" class="logo-img">
+                <div class="branding-text">
+                    <span class="branding-title">LBEF/APU</span>
+                    <span class="branding-subtitle">Hackathon 2026</span>
+                </div>
+            </a>
+            <button class="hamburger" id="hamburgerToggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link" id="nav-home">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link" id="nav-about">About</a></li>
+                <li class="nav-item"><a href="schedule.html" class="nav-link" id="nav-schedule">Schedule</a></li>
+                <li class="nav-item"><a href="challenges.html" class="nav-link" id="nav-challenges">Challenges</a></li>
+                <li class="nav-item"><a href="workshops.html" class="nav-link active" id="nav-workshops">Workshops</a></li>
+                <li class="nav-item"><a href="register.html" class="nav-link" id="nav-register">Register</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">More</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="rules.html" class="nav-link" id="nav-rules">Rules</a></li>
+                        <li><a href="resources.html" class="nav-link" id="nav-resources">Resources</a></li>
+                        <li><a href="gallery.html" class="nav-link" id="nav-gallery">Gallery</a></li>
+                        <li><a href="news.html" class="nav-link" id="nav-news">News</a></li>
+                        <li><a href="faq.html" class="nav-link" id="nav-faq">FAQ</a></li>
+                        <li><a href="contact.html" class="nav-link" id="nav-contact">Contact</a></li>
+                        <li><a href="sponsors.html" class="nav-link" id="nav-sponsors">Sponsors</a></li>
+                        <li><a href="feedback.html" class="nav-link" id="nav-feedback">Feedback</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Page Hero Banner -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Mentoring & Technical Workshops</h1>
+            <p>Enhance your knowledge and polish your prototype with guided expert lectures.</p>
+        </div>
+    </section>
+
+    <!-- Workshops Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Available Sessions</h2>
+            <p class="section-subtitle">Attending workshops is highly recommended to align your project structure with the evaluation rubrics.</p>
+            
+            <div class="grid-2">
+                
+                <!-- Workshop 1: AI -->
+                <div class="card" style="display: flex; flex-direction: column; height: 100%;">
+                    <div class="card-img">
+                        <img src="images/workshops/ai.png" alt="AI Neural Network">
+                    </div>
+                    <div class="card-body" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                        <div>
+                            <span class="card-tag tag-ai">AI & ML</span>
+                            <h3>Introduction to Artificial Intelligence</h3>
+                            <p style="font-size: 0.85rem; color: var(--secondary); font-weight: 700; margin-bottom: 10px;">🕒 Time: 11:00 AM — 12:00 PM</p>
+                            <p>Understand the fundamentals of classification, prediction models, and how to utilize mock local algorithms to solve challenges.</p>
+                            <p style="font-style: italic; font-size: 0.9rem; opacity: 0.8; margin-top: 10px;">Speaker: Dr. K. Prasanna (APU Computer Science)</p>
+                        </div>
+                        <button class="btn btn-primary" style="margin-top: 20px; width: 100%;" onclick="alert('Session location: Seminar Hall A')">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Workshop 2: Web Dev -->
+                <div class="card" style="display: flex; flex-direction: column; height: 100%;">
+                    <div class="card-img">
+                        <img src="images/workshops/web.png" alt="Code editor screen">
+                    </div>
+                    <div class="card-body" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                        <div>
+                            <span class="card-tag tag-web">Web Dev</span>
+                            <h3>Modern Web Development</h3>
+                            <p style="font-size: 0.85rem; color: var(--secondary); font-weight: 700; margin-bottom: 10px;">🕒 Time: 01:00 PM — 02:00 PM</p>
+                            <p>Master clean responsive grid architectures, structured Flexbox navigation, semantic markup standards, and error-free client-side JavaScript.</p>
+                            <p style="font-style: italic; font-size: 0.9rem; opacity: 0.8; margin-top: 10px;">Speaker: Ms. Sneha Pokhrel (LBEF Lecturer)</p>
+                        </div>
+                        <button class="btn btn-primary" style="margin-top: 20px; width: 100%;" onclick="alert('Session location: Main Computing Lab')">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Workshop 3: Cybersecurity -->
+                <div class="card" style="display: flex; flex-direction: column; height: 100%;">
+                    <div class="card-img">
+                        <img src="images/workshops/cyber.png" alt="Digital security key lock">
+                    </div>
+                    <div class="card-body" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                        <div>
+                            <span class="card-tag tag-cyber">Cybersecurity</span>
+                            <h3>Cybersecurity Awareness & Secure Coding</h3>
+                            <p style="font-size: 0.85rem; color: var(--secondary); font-weight: 700; margin-bottom: 10px;">🕒 Time: 02:15 PM — 03:15 PM</p>
+                            <p>Learn to avoid classic security exploits, secure forms validation, data sanitation practices, and protect customer dashboards.</p>
+                            <p style="font-style: italic; font-size: 0.9rem; opacity: 0.8; margin-top: 10px;">Speaker: Mr. Anil Regmi (Cybersecurity Analyst)</p>
+                        </div>
+                        <button class="btn btn-primary" style="margin-top: 20px; width: 100%;" onclick="alert('Session location: Lab B')">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Workshop 4: Cloud Computing -->
+                <div class="card" style="display: flex; flex-direction: column; height: 100%;">
+                    <div class="card-img">
+                        <img src="images/workshops/cloud.png" alt="Cloud networking nodes">
+                    </div>
+                    <div class="card-body" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                        <div>
+                            <span class="card-tag tag-cloud">Cloud</span>
+                            <h3>Cloud Computing Basics</h3>
+                            <p style="font-size: 0.85rem; color: var(--secondary); font-weight: 700; margin-bottom: 10px;">🕒 Time: 03:30 PM — 04:30 PM</p>
+                            <p>Introduction to hosting infrastructures, server deployment environments, API bindings, and setting mock cluster node displays.</p>
+                            <p style="font-style: italic; font-size: 0.9rem; opacity: 0.8; margin-top: 10px;">Speaker: Mr. David Choong (APU Cloud Specialist)</p>
+                        </div>
+                        <button class="btn btn-primary" style="margin-top: 20px; width: 100%;" onclick="alert('Session location: Seminar Hall B')">View Details</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col footer-about">
+                <h3>LBEF/APU Hackathon 2026</h3>
+                <p>An academic technology event co-hosted by Lord Buddha Education Foundation (Nepal) and Asia Pacific University of Technology & Innovation (Malaysia).</p>
+                <p>Designed as an introductory Web Design & Development (FDD) module project.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="challenges.html">Challenges</a></li>
+                    <li><a href="workshops.html">Workshops</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </div>
+            <div class="footer-col footer-contact">
+                <h3>Contact Info</h3>
+                <p>📍 Kathmandu, Nepal</p>
+                <p>📧 info@lbef.edu.np</p>
+                <p>📞 +977-1-4444337</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-icon">Fb</a>
+                    <a href="#" class="social-icon">Tw</a>
+                    <a href="#" class="social-icon">Ld</a>
+                    <a href="#" class="social-icon">Yt</a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 LBEF/APU Hackathon. Academic Project. Fictional / Sample Information.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

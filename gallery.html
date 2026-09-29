@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | LBEF/APU Hackathon 2026</title>
+    <meta name="description" content="Explore event photos, workshops, presentations, and team activities from the LBEF/APU Hackathon 2026.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="branding" id="brandingLogo">
+                <img src="images/logo/lbef_logo.webp" alt="LBEF Logo" class="logo-img">
+                <span class="logo-divider">×</span>
+                <img src="images/logo/apu_logo.webp" alt="APU Logo" class="logo-img">
+                <div class="branding-text">
+                    <span class="branding-title">LBEF/APU</span>
+                    <span class="branding-subtitle">Hackathon 2026</span>
+                </div>
+            </a>
+            <button class="hamburger" id="hamburgerToggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link" id="nav-home">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link" id="nav-about">About</a></li>
+                <li class="nav-item"><a href="schedule.html" class="nav-link" id="nav-schedule">Schedule</a></li>
+                <li class="nav-item"><a href="challenges.html" class="nav-link" id="nav-challenges">Challenges</a></li>
+                <li class="nav-item"><a href="workshops.html" class="nav-link" id="nav-workshops">Workshops</a></li>
+                <li class="nav-item"><a href="register.html" class="nav-link" id="nav-register">Register</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">More</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="rules.html" class="nav-link" id="nav-rules">Rules</a></li>
+                        <li><a href="resources.html" class="nav-link" id="nav-resources">Resources</a></li>
+                        <li><a href="gallery.html" class="nav-link active" id="nav-gallery">Gallery</a></li>
+                        <li><a href="news.html" class="nav-link" id="nav-news">News</a></li>
+                        <li><a href="faq.html" class="nav-link" id="nav-faq">FAQ</a></li>
+                        <li><a href="contact.html" class="nav-link" id="nav-contact">Contact</a></li>
+                        <li><a href="sponsors.html" class="nav-link" id="nav-sponsors">Sponsors</a></li>
+                        <li><a href="feedback.html" class="nav-link" id="nav-feedback">Feedback</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Page Hero Banner -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Event Gallery</h1>
+            <p>Highlights of collaborative learning, technical workshops, and coding sprint moments.</p>
+        </div>
+    </section>
+
+    <!-- Gallery Grid Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Captured Moments</h2>
+            <p class="section-subtitle">Click on any image to expand the view in the custom lightbox viewer.</p>
+            
+            <div class="gallery-grid">
+                
+                <!-- Image 1 -->
+                <div class="gallery-item">
+                    <img src="images/gallery/team.png" alt="Collaborative group brainstorm">
+                    <div class="gallery-overlay">
+                        <h3>Team Hacking Session</h3>
+                        <span>Teamwork</span>
+                    </div>
+                </div>
+
+                <!-- Image 2 -->
+                <div class="gallery-item">
+                    <img src="images/gallery/workshop.png" alt="Workshop presentation slide">
+                    <div class="gallery-overlay">
+                        <h3>AI Mentorship Seminar</h3>
+                        <span>Workshop</span>
+                    </div>
+                </div>
+
+                <!-- Image 3 -->
+                <div class="gallery-item">
+                    <img src="images/gallery/presentation.png" alt="Student presentation to review panel">
+                    <div class="gallery-overlay">
+                        <h3>Web Track Pitch</h3>
+                        <span>Presentation</span>
+                    </div>
+                </div>
+
+                <!-- Image 4 -->
+                <div class="gallery-item">
+                    <img src="images/gallery/coding.png" alt="Close up on development keyboard">
+                    <div class="gallery-overlay">
+                        <h3>Coding the Prototype</h3>
+                        <span>Technology</span>
+                    </div>
+                </div>
+
+                <!-- Image 5 -->
+                <div class="gallery-item">
+                    <img src="images/gallery/ceremony.png" alt="Group holding award trophy">
+                    <div class="gallery-overlay">
+                        <h3>Closing Award Session</h3>
+                        <span>Hackathon</span>
+                    </div>
+                </div>
+
+                <!-- Image 6 -->
+                <div class="gallery-item">
+                    <img src="images/gallery/networking.png" alt="Students conversing in hallway">
+                    <div class="gallery-overlay">
+                        <h3>Peer Networking Exchange</h3>
+                        <span>Collaboration</span>
+                    </div>
+                </div>
+
+            </div>
+            
+            <p class="demo-note">Note: Interactivity is implemented in vanilla JavaScript. Click outside or press ESC to close the lightbox.</p>
+        </div>
+    </section>
+
+    <!-- Custom Lightbox Modal -->
+    <div class="modal" id="galleryModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose" aria-label="Close modal">&times;</button>
+            <img id="modalImage" src="" alt="">
+            <div class="modal-caption" id="modalCaption"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col footer-about">
+                <h3>LBEF/APU Hackathon 2026</h3>
+                <p>An academic technology event co-hosted by Lord Buddha Education Foundation (Nepal) and Asia Pacific University of Technology & Innovation (Malaysia).</p>
+                <p>Designed as an introductory Web Design & Development (FDD) module project.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="challenges.html">Challenges</a></li>
+                    <li><a href="workshops.html">Workshops</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </div>
+            <div class="footer-col footer-contact">
+                <h3>Contact Info</h3>
+                <p>📍 Kathmandu, Nepal</p>
+                <p>📧 info@lbef.edu.np</p>
+                <p>📞 +977-1-4444337</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-icon">Fb</a>
+                    <a href="#" class="social-icon">Tw</a>
+                    <a href="#" class="social-icon">Ld</a>
+                    <a href="#" class="social-icon">Yt</a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 LBEF/APU Hackathon. Academic Project. Fictional / Sample Information.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

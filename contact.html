@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | LBEF/APU Hackathon 2026</title>
+    <meta name="description" content="Get in touch with the LBEF/APU Hackathon 2026 organizing team. Send us your queries.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="branding" id="brandingLogo">
+                <img src="images/logo/lbef_logo.webp" alt="LBEF Logo" class="logo-img">
+                <span class="logo-divider">×</span>
+                <img src="images/logo/apu_logo.webp" alt="APU Logo" class="logo-img">
+                <div class="branding-text">
+                    <span class="branding-title">LBEF/APU</span>
+                    <span class="branding-subtitle">Hackathon 2026</span>
+                </div>
+            </a>
+            <button class="hamburger" id="hamburgerToggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link" id="nav-home">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link" id="nav-about">About</a></li>
+                <li class="nav-item"><a href="schedule.html" class="nav-link" id="nav-schedule">Schedule</a></li>
+                <li class="nav-item"><a href="challenges.html" class="nav-link" id="nav-challenges">Challenges</a></li>
+                <li class="nav-item"><a href="workshops.html" class="nav-link" id="nav-workshops">Workshops</a></li>
+                <li class="nav-item"><a href="register.html" class="nav-link" id="nav-register">Register</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">More</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="rules.html" class="nav-link" id="nav-rules">Rules</a></li>
+                        <li><a href="resources.html" class="nav-link" id="nav-resources">Resources</a></li>
+                        <li><a href="gallery.html" class="nav-link" id="nav-gallery">Gallery</a></li>
+                        <li><a href="news.html" class="nav-link" id="nav-news">News</a></li>
+                        <li><a href="faq.html" class="nav-link" id="nav-faq">FAQ</a></li>
+                        <li><a href="contact.html" class="nav-link active" id="nav-contact">Contact</a></li>
+                        <li><a href="sponsors.html" class="nav-link" id="nav-sponsors">Sponsors</a></li>
+                        <li><a href="feedback.html" class="nav-link" id="nav-feedback">Feedback</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Page Hero Banner -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Have questions about guidelines or logistics? Send us a message.</p>
+        </div>
+    </section>
+
+    <!-- Contact Info & Form -->
+    <section class="section">
+        <div class="container grid-2">
+            
+            <!-- Left: Info -->
+            <div style="background-color: var(--white); padding: 40px; border-radius: var(--border-radius-lg); box-shadow: var(--shadow-sm); border: 1px solid var(--border-color); height: 100%;">
+                <h2 class="section-title" style="text-align: left; margin-bottom: 25px;">Event Info Desk</h2>
+                
+                <div class="footer-contact" style="color: var(--primary); display: flex; flex-direction: column; gap: 20px;">
+                    <div>
+                        <h4 style="font-weight: 700; color: var(--secondary);">📍 Venue Location</h4>
+                        <p style="margin-top: 5px; opacity: 0.9;">Lord Buddha Education Foundation (LBEF)<br>Opposite to Maitidevi Temple, Kathmandu, Nepal</p>
+                    </div>
+                    
+                    <div>
+                        <h4 style="font-weight: 700; color: var(--secondary);">📧 Email Inquiries</h4>
+                        <p style="margin-top: 5px; opacity: 0.9;">info@lbef.edu.np<br>hackathon2026@lbef.edu.np</p>
+                    </div>
+
+                    <div>
+                        <h4 style="font-weight: 700; color: var(--secondary);">📞 Phone Contact</h4>
+                        <p style="margin-top: 5px; opacity: 0.9;">+977-1-4444337<br>+977-1-4411808</p>
+                    </div>
+
+                    <div>
+                        <h4 style="font-weight: 700; color: var(--secondary);">🕒 Desk Hours</h4>
+                        <p style="margin-top: 5px; opacity: 0.9;">Sunday — Friday: 09:00 AM — 05:00 PM<br>(Local Nepalese Time)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Form -->
+            <div class="form-container" style="margin: 0; width: 100%; max-width: 100%;">
+                <h2 style="margin-bottom: 20px; font-weight: 700; color: var(--primary);">Query Form</h2>
+                
+                <!-- Alerts (Handled via JS) -->
+                <div class="alert alert-success" id="contactSuccess"></div>
+                <div class="alert alert-danger" id="contactError"></div>
+
+                <form id="contactForm" novalidate>
+                    <div class="form-group">
+                        <label for="contactName">Your Name <span class="required">*</span></label>
+                        <input type="text" id="contactName" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactEmail">Your Email <span class="required">*</span></label>
+                        <input type="email" id="contactEmail" placeholder="Enter your email address" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactSubject">Subject <span class="required">*</span></label>
+                        <input type="text" id="contactSubject" placeholder="Inquiry subject" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactMessage">Message <span class="required">*</span></label>
+                        <textarea id="contactMessage" rows="5" placeholder="Write your query details here..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    
+                    <p class="demo-note">Demo form only — no data is stored.</p>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col footer-about">
+                <h3>LBEF/APU Hackathon 2026</h3>
+                <p>An academic technology event co-hosted by Lord Buddha Education Foundation (Nepal) and Asia Pacific University of Technology & Innovation (Malaysia).</p>
+                <p>Designed as an introductory Web Design & Development (FDD) module project.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="challenges.html">Challenges</a></li>
+                    <li><a href="workshops.html">Workshops</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </div>
+            <div class="footer-col footer-contact">
+                <h3>Contact Info</h3>
+                <p>📍 Kathmandu, Nepal</p>
+                <p>📧 info@lbef.edu.np</p>
+                <p>📞 +977-1-4444337</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-icon">Fb</a>
+                    <a href="#" class="social-icon">Tw</a>
+                    <a href="#" class="social-icon">Ld</a>
+                    <a href="#" class="social-icon">Yt</a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 LBEF/APU Hackathon. Academic Project. Fictional / Sample Information.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | LBEF/APU Hackathon 2026</title>
+    <meta name="description" content="Official LBEF/APU Student Hackathon website. Innovate, Build, and Present practical digital solutions.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="branding" id="brandingLogo">
+                <!-- Replace this placeholder with the official LBEF logo -->
+                <img src="images/logo/lbef_logo.webp" alt="LBEF Logo" class="logo-img">
+                <span class="logo-divider">×</span>
+                <!-- Replace this placeholder with the official APU logo -->
+                <img src="images/logo/apu_logo.webp" alt="APU Logo" class="logo-img">
+                <div class="branding-text">
+                    <span class="branding-title">LBEF/APU</span>
+                    <span class="branding-subtitle">Hackathon 2026</span>
+                </div>
+            </a>
+            <button class="hamburger" id="hamburgerToggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link active" id="nav-home">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link" id="nav-about">About</a></li>
+                <li class="nav-item"><a href="schedule.html" class="nav-link" id="nav-schedule">Schedule</a></li>
+                <li class="nav-item"><a href="challenges.html" class="nav-link" id="nav-challenges">Challenges</a></li>
+                <li class="nav-item"><a href="workshops.html" class="nav-link" id="nav-workshops">Workshops</a></li>
+                <li class="nav-item"><a href="register.html" class="nav-link" id="nav-register">Register</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">More</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="rules.html" class="nav-link" id="nav-rules">Rules</a></li>
+                        <li><a href="resources.html" class="nav-link" id="nav-resources">Resources</a></li>
+                        <li><a href="gallery.html" class="nav-link" id="nav-gallery">Gallery</a></li>
+                        <li><a href="news.html" class="nav-link" id="nav-news">News</a></li>
+                        <li><a href="faq.html" class="nav-link" id="nav-faq">FAQ</a></li>
+                        <li><a href="contact.html" class="nav-link" id="nav-contact">Contact</a></li>
+                        <li><a href="sponsors.html" class="nav-link" id="nav-sponsors">Sponsors</a></li>
+                        <li><a href="feedback.html" class="nav-link" id="nav-feedback">Feedback</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <span class="hero-tagline">LBEF/APU HACKATHON 2026</span>
+            <h1>INNOVATE. BUILD. PRESENT.</h1>
+            <p class="hero-motto">Where student ideas become practical digital solutions.</p>
+            <p class="hero-desc">Collaborate with fellow tech enthusiasts, build working software solutions, and present your ideas to industry leaders in this premier academic hackathon.</p>
+            <div class="hero-actions">
+                <a href="register.html" class="btn btn-accent">REGISTER NOW</a>
+                <a href="challenges.html" class="btn btn-outline">EXPLORE CHALLENGES</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown Timer -->
+    <section class="countdown-section">
+        <div class="container">
+            <h2 class="countdown-title" id="countdownTitle">HACKATHON STARTS IN</h2>
+            <div class="countdown-grid" id="countdownGrid">
+                <div class="countdown-card">
+                    <span class="countdown-number" id="timerDays">00</span>
+                    <span class="countdown-label">Days</span>
+                </div>
+                <div class="countdown-card">
+                    <span class="countdown-number" id="timerHours">00</span>
+                    <span class="countdown-label">Hours</span>
+                </div>
+                <div class="countdown-card">
+                    <span class="countdown-number" id="timerMinutes">00</span>
+                    <span class="countdown-label">Minutes</span>
+                </div>
+                <div class="countdown-card">
+                    <span class="countdown-number" id="timerSeconds">00</span>
+                    <span class="countdown-label">Seconds</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About the Hackathon -->
+    <section class="section">
+        <div class="container grid-2">
+            <div>
+                <h2 class="section-title" style="text-align: left; margin-bottom: 20px;">About the Hackathon</h2>
+                <p style="margin-bottom: 15px; font-size: 1.1rem; opacity: 0.9;">The LBEF/APU Hackathon 2026 is a student-driven technology platform combining the academic excellence of Lord Buddha Education Foundation (LBEF), Nepal, and the technological prestige of Asia Pacific University of Technology & Innovation (APU), Malaysia.</p>
+                <p style="margin-bottom: 25px; opacity: 0.85;">This event challenges undergraduate students to build working prototypes addressing real-world problems in key tracks like Web Development, AI, Cybersecurity, Cloud, and Digital Innovation.</p>
+                <a href="about.html" class="btn btn-primary">LEARN MORE</a>
+            </div>
+            <div>
+                <img src="images/gallery/team.png" alt="Students Collaborating" style="border-radius: var(--border-radius-lg); box-shadow: var(--shadow-lg);">
+            </div>
+        </div>
+    </section>
+
+    <!-- Challenge Categories -->
+    <section class="section" style="background-color: var(--white);">
+        <div class="container">
+            <h2 class="section-title">Challenge Categories</h2>
+            <p class="section-subtitle">Pick a track, collaborate with your team, and build a project that makes an impact.</p>
+            <div class="grid-3">
+                <!-- Web Dev -->
+                <div class="card">
+                    <div class="card-body">
+                        <span class="card-tag tag-web">Web Dev</span>
+                        <h3>Web Development</h3>
+                        <p>Build creative, accessible, and user-friendly web applications that address real-world local or global challenges.</p>
+                    </div>
+                </div>
+                <!-- AI -->
+                <div class="card">
+                    <div class="card-body">
+                        <span class="card-tag tag-ai">Artificial Intelligence</span>
+                        <h3>AI & Deep Learning</h3>
+                        <p>Utilize smart algorithms, machine learning, or neural networks to automate processes and generate predictions.</p>
+                    </div>
+                </div>
+                <!-- Cyber -->
+                <div class="card">
+                    <div class="card-body">
+                        <span class="card-tag tag-cyber">Cybersecurity</span>
+                        <h3>Cybersecurity</h3>
+                        <p>Design secure networking protocols, detect vulnerabilities, or prototype defense mechanisms for digital infrastructure.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Participate -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Why Participate?</h2>
+            <p class="section-subtitle">Unleash your potential, network with experts, and win exciting prizes.</p>
+            <div class="highlight-grid">
+                <div class="highlight-card">
+                    <div class="highlight-icon">🛠️</div>
+                    <h3>Build Real Solutions</h3>
+                    <p>Turn abstract ideas into fully functional prototypes that address authentic industry requirements.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">💻</div>
+                    <h3>Improve Tech Skills</h3>
+                    <p>Gain hands-on coding, architecting, and deployment experience under time constraints.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">🤝</div>
+                    <h3>Work as a Team</h3>
+                    <p>Strengthen communication, project management, and collaborative development skills.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">📢</div>
+                    <h3>Present Your Ideas</h3>
+                    <p>Pitch your solution to a panel of expert judges and university lecturers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Highlights -->
+    <section class="section" style="background-color: var(--white);">
+        <div class="container">
+            <h2 class="section-title">Event Highlights</h2>
+            <p class="section-subtitle">Discover the full scope of activities during the event.</p>
+            <div class="grid-2">
+                <div>
+                    <img src="images/gallery/ceremony.png" alt="Closing Ceremony" style="border-radius: var(--border-radius-lg); box-shadow: var(--shadow-lg);">
+                </div>
+                <div style="padding-left: 20px;">
+                    <ul class="rules-list">
+                        <li><strong>Competitions:</strong> Multi-track 24-hour sprint where you compete against fellow undergraduate teams.</li>
+                        <li><strong>Workshops:</strong> Expert-led sessions covering core APIs, web technologies, and presentation pitches.</li>
+                        <li><strong>Team Building:</strong> Icebreaking activities to collaborate with mentors, peers, and external sponsors.</li>
+                        <li><strong>Final Presentation:</strong> Formal science-fair style demonstration and final deck pitching.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container cta-content">
+            <h2>READY TO BUILD SOMETHING GREAT?</h2>
+            <p>Form a team of 2 to 4 members, select your challenge track, and secure your spot today.</p>
+            <a href="register.html" class="btn btn-accent" style="font-size: 1.1rem; padding: 15px 35px;">REGISTER YOUR TEAM</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col footer-about">
+                <h3>LBEF/APU Hackathon 2026</h3>
+                <p>An academic technology event co-hosted by Lord Buddha Education Foundation (Nepal) and Asia Pacific University of Technology & Innovation (Malaysia).</p>
+                <p>Designed as an introductory Web Design & Development (FDD) module project.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="challenges.html">Challenges</a></li>
+                    <li><a href="workshops.html">Workshops</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </div>
+            <div class="footer-col footer-contact">
+                <h3>Contact Info</h3>
+                <p>📍 Kathmandu, Nepal</p>
+                <p>📧 info@lbef.edu.np</p>
+                <p>📞 +977-1-4444337</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-icon">Fb</a>
+                    <a href="#" class="social-icon">Tw</a>
+                    <a href="#" class="social-icon">Ld</a>
+                    <a href="#" class="social-icon">Yt</a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 LBEF/APU Hackathon. Academic Project. Fictional / Sample Information.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

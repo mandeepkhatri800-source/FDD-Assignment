@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback | LBEF/APU Hackathon 2026</title>
+    <meta name="description" content="Share your comments, rating, and suggestions to help improve LBEF/APU Hackathon events.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="branding" id="brandingLogo">
+                <img src="images/logo/lbef_logo.webp" alt="LBEF Logo" class="logo-img">
+                <span class="logo-divider">×</span>
+                <img src="images/logo/apu_logo.webp" alt="APU Logo" class="logo-img">
+                <div class="branding-text">
+                    <span class="branding-title">LBEF/APU</span>
+                    <span class="branding-subtitle">Hackathon 2026</span>
+                </div>
+            </a>
+            <button class="hamburger" id="hamburgerToggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link" id="nav-home">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link" id="nav-about">About</a></li>
+                <li class="nav-item"><a href="schedule.html" class="nav-link" id="nav-schedule">Schedule</a></li>
+                <li class="nav-item"><a href="challenges.html" class="nav-link" id="nav-challenges">Challenges</a></li>
+                <li class="nav-item"><a href="workshops.html" class="nav-link" id="nav-workshops">Workshops</a></li>
+                <li class="nav-item"><a href="register.html" class="nav-link" id="nav-register">Register</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">More</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="rules.html" class="nav-link" id="nav-rules">Rules</a></li>
+                        <li><a href="resources.html" class="nav-link" id="nav-resources">Resources</a></li>
+                        <li><a href="gallery.html" class="nav-link" id="nav-gallery">Gallery</a></li>
+                        <li><a href="news.html" class="nav-link" id="nav-news">News</a></li>
+                        <li><a href="faq.html" class="nav-link" id="nav-faq">FAQ</a></li>
+                        <li><a href="contact.html" class="nav-link" id="nav-contact">Contact</a></li>
+                        <li><a href="sponsors.html" class="nav-link" id="nav-sponsors">Sponsors</a></li>
+                        <li><a href="feedback.html" class="nav-link active" id="nav-feedback">Feedback</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Page Hero Banner -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Participant Feedback</h1>
+            <p>Help us improve future events by sharing your thoughts and rating your experience.</p>
+        </div>
+    </section>
+
+    <!-- Feedback Form Section -->
+    <section class="section">
+        <div class="container">
+            
+            <div class="form-container">
+                <h2 style="text-align: center; margin-bottom: 30px; font-weight: 700; color: var(--primary);">Event Feedback</h2>
+                
+                <!-- Alerts (Handled via JS) -->
+                <div class="alert alert-success" id="feedbackSuccess"></div>
+                <div class="alert alert-danger" id="feedbackError"></div>
+
+                <form id="feedbackForm" novalidate>
+                    
+                    <!-- Name -->
+                    <div class="form-group">
+                        <label for="feedbackName">Full Name (Optional)</label>
+                        <input type="text" id="feedbackName" placeholder="Enter your name (leave blank to remain anonymous)">
+                    </div>
+
+                    <!-- Rating Radio Buttons -->
+                    <div class="form-group">
+                        <label>Overall Rating <span class="required">*</span></label>
+                        <div class="rating-select">
+                            <label class="rating-option">
+                                <input type="radio" name="rating" value="1" required>
+                                <span>1 ⭐</span>
+                            </label>
+                            <label class="rating-option">
+                                <input type="radio" name="rating" value="2" required>
+                                <span>2 ⭐</span>
+                            </label>
+                            <label class="rating-option">
+                                <input type="radio" name="rating" value="3" required>
+                                <span>3 ⭐</span>
+                            </label>
+                            <label class="rating-option">
+                                <input type="radio" name="rating" value="4" required>
+                                <span>4 ⭐</span>
+                            </label>
+                            <label class="rating-option">
+                                <input type="radio" name="rating" value="5" required>
+                                <span>5 ⭐</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Overall Experience Select -->
+                    <div class="form-group">
+                        <label for="experience">How was your overall learning experience? <span class="required">*</span></label>
+                        <select id="experience" required>
+                            <option value="" disabled selected>Select an option</option>
+                            <option value="excellent">Excellent — Exceeded expectations</option>
+                            <option value="good">Good — Met expectations</option>
+                            <option value="average">Average — Needs minor improvements</option>
+                            <option value="poor">Poor — Did not meet expectations</option>
+                        </select>
+                    </div>
+
+                    <!-- Comments Textarea -->
+                    <div class="form-group">
+                        <label for="comments">What did you enjoy most about the hackathon? <span class="required">*</span></label>
+                        <textarea id="comments" rows="3" placeholder="Share your favorite moments, workshops, or challenge tracks..." required></textarea>
+                    </div>
+
+                    <!-- Suggestions Textarea -->
+                    <div class="form-group">
+                        <label for="suggestions">Suggestions for Future Events</label>
+                        <textarea id="suggestions" rows="3" placeholder="How can we make LBEF/APU Hackathon 2027 even better?"></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-accent" style="width: 100%;">Submit Feedback</button>
+                    
+                    <p class="demo-note">Demo form only — no data is stored.</p>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col footer-about">
+                <h3>LBEF/APU Hackathon 2026</h3>
+                <p>An academic technology event co-hosted by Lord Buddha Education Foundation (Nepal) and Asia Pacific University of Technology & Innovation (Malaysia).</p>
+                <p>Designed as an introductory Web Design & Development (FDD) module project.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="challenges.html">Challenges</a></li>
+                    <li><a href="workshops.html">Workshops</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </div>
+            <div class="footer-col footer-contact">
+                <h3>Contact Info</h3>
+                <p>📍 Kathmandu, Nepal</p>
+                <p>📧 info@lbef.edu.np</p>
+                <p>📞 +977-1-4444337</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-icon">Fb</a>
+                    <a href="#" class="social-icon">Tw</a>
+                    <a href="#" class="social-icon">Ld</a>
+                    <a href="#" class="social-icon">Yt</a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 LBEF/APU Hackathon. Academic Project. Fictional / Sample Information.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
